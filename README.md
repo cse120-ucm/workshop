@@ -36,13 +36,24 @@ Create an issue to update Readme.md with project details.
 - **Description:** Update Readme.md with project details including project name, team members, project description
 - **Label:** Documentation
 
-#### Update `Readme.md` with project details.
+### 1.4 Update `Readme.md` with project details.
 
 - Project Name
 - Team Members
 - Project Description
 - Technologies Used
 - Setup Instructions
+
+### 1.5 Create & Merge a PR
+
+1. Create a new branch from main branch. Name the branch as `update-readme`.
+2. Update Readme.md with project details.
+3. Commit the changes with a meaningful commit message.
+4. Push the branch to the remote repository.
+5. Create a pull request from `update-readme` branch to `main` branch.
+6. Request a review from your partner.
+7. Once the review is approved, merge the pull request.
+8. Delete the `update-readme` branch after merging.
 
 ## 2. Create milestones for the project:
 
