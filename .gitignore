@@ -1,0 +1,79 @@
+# ==============================
+# Python / FastAPI / NiceGUI Project Git Ignore
+# ==============================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Tool & package caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.hypothesis/
+.cache/
+.uv/
+
+# NiceGUI (runtime generated assets)
+.nicegui/
+
+# Build / distribution artifacts
+build/
+dist/
+wheelhouse/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Coverage / testing artifacts
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.benchmarks/
+
+# Logs & temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Editor / IDE settings
+.idea/
+.vscode/
+*.code-workspace
+
+# OS / misc
+.DS_Store
+Thumbs.db
+
+# Node / front-end (future-proofing if added later)
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+dist-frontend/
+
+# Docker / container local overrides
+docker-compose.override.yml
+
+# Jupyter / notebooks (if used for experimentation)
+.ipynb_checkpoints/
+
+# Poetry / PDM / other tool artifacts (not currently used, safe ignore)
+poetry.lock
+pdm.lock
+
+# Semantic release temporary artifacts (keep CHANGELOG.md under version control)
+.semantic-release/
+
+# Local secrets (never commit real secrets) 
+secrets*.json
+*.secret

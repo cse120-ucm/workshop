@@ -1,0 +1,38 @@
+[project]
+name = "cse120-github-workshop"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.118.0",
+    "nicegui>=3.0.2",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.18.2",
+    "pytest>=8.4.2",
+    "ruff>=0.13.3",
+]
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+filterwarnings = [
+  # Ignore deprecations from vbuild using pkgutil.find_loader (pending upstream fix)
+  "ignore:'pkgutil.find_loader' is deprecated:DeprecationWarning:vbuild"
+]
+
+[tool.semantic_release]
+version_toml = ["pyproject.toml:project.version"]
+branch = "main"
+allow_zero_version = true
+major_on_zero = false
+upload_to_pypi = false
+upload_to_release = true
+commit_version_number = true
+tag_commit = true
+changelog_file = "CHANGELOG.md"
+build_command = "python -m pip install uv && python -m uv build"

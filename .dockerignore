@@ -1,0 +1,30 @@
+# Python/cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual envs
+.venv/
+venv/
+
+# Tests (include for workshop transparency; comment out to slim image later)
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Git / CI
+.git/
+.gitignore
+.github/
+
+# Editor / tooling
+.vscode/
+.idea/
+.mypy_cache/
+.ruff_cache/
+
+# Misc
+*.log
+Dockerfile*
